@@ -5,9 +5,12 @@ jobs:
   Test-the-LoC-Action:
     runs-on: ubuntu-latest
     steps:
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - name: Check LoC
         uses: Berke-Ates/LoC@v1.4
         with:
-          folder: ../test-script
+          folder: ./
           max-lines: 200
             
