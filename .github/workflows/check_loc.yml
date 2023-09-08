@@ -5,6 +5,8 @@ jobs:
   Test-the-LoC-Action:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
