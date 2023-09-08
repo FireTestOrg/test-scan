@@ -8,6 +8,6 @@ jobs:
       - name: Check LoC
         uses: Berke-Ates/LoC@v1.4
         with:
-          folder: test-script
+          folder: ./test-script
           max-lines: 200
             
